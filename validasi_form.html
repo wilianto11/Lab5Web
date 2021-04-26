@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Validasi JavaScript</title>
+        <link rel="stylesheet" href="validasi.css">
+        <script type="text/javascript">
+            function validasi() {
+                var nik = document.getElementById("nik").value;
+                var nama = document.getElementById("nama").value;
+                var alamat = document.getElementById("alamat").value;
+                var email = document.getElementById("email").value;
+                var jurusan = document.getElementById("jurusan").value;
+                if (nama != "" && email!="" && alamat !="") {
+                    return true;
+                }else{
+                    alert('isi form Registrasi dengan benar!! coba sekali lagi')
+                }
+            }
+        </script>
+	</head>
+	<body>
+			<form action="#" method="POST" onSubmit="validasi()">
+                <h1>Form Registrasi</h1>
+                <div class="txtb">
+                    <label>nik :</label>
+                    <input type="text" name="nik" id="nik" value="" placeholder="isi dengan benar">
+                </div>
+				<div class="txtb">
+                    <label>nama :</label>
+                    <input type="text" name="nama"  id="nama" value="" placeholder="isi dengan benar">
+                </div>
+                <div class="txtb">
+                    <label>alamat :</label>
+                    <input type="text" name="alamat" id="alamat" value="" placeholder="isi dengan benar">
+                </div>
+                <div class="txtb">
+                    <label>email :</label>
+                    <input type="email" name="email" id="email" value="" placeholder="isi dengan benar">
+                </div>
+                <div class="txtb">
+                    <label>jurusan :</label>
+                    <input type="text" name="jurusan" id="jurusan" value="" placeholder="isi dengan benar">
+                </div>
+                <div>
+					<input type="submit" value="Submit"> 
+				</div>
+			</form>
+	</body>
+</html>
